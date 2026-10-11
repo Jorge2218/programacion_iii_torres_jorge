@@ -2,7 +2,7 @@
 
 ## Autor
 
-**Jorge Torres**
+**Jorge Alexander Torres Molina**
 
 ---
 
