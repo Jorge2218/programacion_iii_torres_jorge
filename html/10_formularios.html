@@ -1,19 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formularios</title>
 </head>
+
 <body>
-    
+
     <form action="/registro" method="post">
-        <label for="nombre">nombre</label>
-        <input type="text" id="nombre" name="nombre">
-        <label for="apellido" apellido>apellido</label>
-        <input type="text" id="apellido" name="apellido">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </td>
+                <td>
+                    <label for="apellido">apellido</label>
+                    <input type="text" id="apellido" name="apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">password</label>
+                    <input type="text" id="password" name="password">
+                </td>
+                <td>
+                    <label for="confirmar_password">confirmar_password</label>
+                    <input type="text" id="confirmar_password" name="confirmar_password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">edad</label>
+                    <input type="text" id="edad" name="edad">
+                </td>
+                <td>
+                    <label for="nivel de fuerza">nivel de fuerza</label>
+                    <input type="number" id="nivel" name="nivel"
+                    min="10" max="100" value="50" step="5">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>seleccione tu bando</p>
+                    <input type="radio" id="bando1" name="bando" value="bando1">
+                    <label for="bando1">bando1</label>
+                    <input type="radio" id="bando2" name="bando" value="bando2">
+                    <label for="bando2">bando2</label>
+                </td>
+                <td>
+                    <label for="nivel">seleccione tus habilidades</label><br>
+                    <input type="checkbox" id="fuerza" name="habilidades" value="fuerza">
+
+                    <label for="fuerza">uso de la fuerza</label><br>
+                    <input type="checkbox" id="sable"
+                     name="habilidades" value="sable">
+
+                    <label for="fuerza">uso del sable</label><br>
+                    <input type="checkbox" id="levitar"
+                     name="habilidades" value="levitar">
+                    <label for="levitar">levitación</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="planeta">planeta de origen</label><br>
+                    <select name="planeta" id="planeta">
+                        <option value="">seleccione un planeta</option>
+                        <option value="tatooine">tatooine</option>
+                        <option value="naboo">naboo</option>
+                        <option value="coruscant">coruscant</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="droide">droide</label><br>
+                    <select name="droide" id="droide" multiple size="2">
+                        <option value="">seleccione un droide</option>
+                        <option value="r2d2">r2d2</option>
+                        <option value="c3po">c3po</option>
+                        <option value="ackbar">ackbar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset >
+                        <legend>datos generales</legend>
+                        <textarea name="misiones" id="misiones" cols="30" rows="10"></textarea>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
         <button type="submit">enviar</button>
+        <button type="reset">reset</button>
     </form>
 
 </body>
+
 </html>
