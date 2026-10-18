@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+
+<body>
+
+    <form action="/registro" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </td>
+                <td>
+                    <label for="apellido">apellido</label>
+                    <input type="text" id="apellido" name="apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password">
+                </td>
+                <td>
+                    <label for="confirmar_password">confirmar password</label>
+                    <input type="password" id="confirmar_password" name="confirmar_password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">edad</label>
+                    <input type="number" id="edad" name="edad" min="1" max="100">
+                </td>
+                <td>
+                    <label for="cantidad">cantidad de guaguas</label>
+                    <input type="number" id="cantidad" name="cantidad"
+                    min="1" max="20" value="2" step="1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>seleccione el tipo de entrega</p>
+                    <input type="radio" id="retiro" name="entrega" value="retiro">
+                    <label for="retiro">retiro en local</label>
+                    <input type="radio" id="domicilio" name="entrega" value="domicilio">
+                    <label for="domicilio">a domicilio</label>
+                </td>
+                <td>
+                    <label>seleccione los rellenos</label><br>
+                    <input type="checkbox" id="mora" name="rellenos" value="mora">
+                    <label for="mora">mora</label><br>
+
+                    <input type="checkbox" id="guayaba"
+                     name="rellenos" value="guayaba">
+                    <label for="guayaba">guayaba</label><br>
+
+                    <input type="checkbox" id="manjar"
+                     name="rellenos" value="manjar">
+                    <label for="manjar">manjar de leche</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sector">sector de Quito</label><br>
+                    <select name="sector" id="sector">
+                        <option value="">seleccione un sector</option>
+                        <option value="norte">norte</option>
+                        <option value="centro">centro</option>
+                        <option value="sur">sur</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="acompanante">acompañante</label><br>
+                    <select name="acompanante" id="acompanante" multiple size="2">
+                        <option value="">seleccione un acompañante</option>
+                        <option value="colada">colada morada</option>
+                        <option value="cafe">café</option>
+                        <option value="chocolate">chocolate caliente</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>datos generales</legend>
+                        <textarea name="pedido" id="pedido" cols="30" rows="10"></textarea>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <button type="submit">enviar</button>
+        <button type="reset">reset</button>
+    </form>
+
+</body>
+
+</html>
