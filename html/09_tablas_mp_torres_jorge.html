@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+<body>
+    <h1>Tablas en HTML5</h1>
+    <table id="productos" border="1">
+        <caption>Productos de Twin Ovens</caption>
+        <tr>
+            <th colspan="3">Productos</th>
+        </tr>
+        <tr>
+            <th>producto</th>
+            <th>tipo</th>
+            <th>temporada</th>
+        </tr>
+        <tr>
+            <td>Guagua de pan</td>
+            <td rowspan="2">Pan dulce</td>
+            <td>Finados</td>
+        </tr>
+        <tr>
+            <td>Quesadilla</td>
+            <td>Todo el año</td>
+        </tr>
+        <tr>
+            <td>Pan de yuca</td>
+            <td>Pan salado</td>
+            <td>Todo el año</td>
+        </tr>
+    </table>
+    <br>
+    <table id="guaguas" border="1">
+        <caption>Guaguas de pan disponibles</caption>
+        <thead>
+            <tr>
+                <th>producto</th>
+                <th>relleno</th>
+                <th>tamaño</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Guagua de pan</td>
+                <td>Mora</td>
+                <td>Grande</td>
+            </tr>
+            <tr>
+                <td>Guagua de pan</td>
+                <td>Manjar</td>
+                <td>Mediana</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total de guaguas</th>
+                <th>2</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
