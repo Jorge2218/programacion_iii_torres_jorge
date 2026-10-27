@@ -1,0 +1,159 @@
+body {
+    background-color: #0b1020;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #facc15;
+}
+
+.boton-jedi{
+    padding: 15px 25px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease ;
+}
+
+.boton-jedi:hover{
+    background-color: #16a34a;
+}
+
+.boton-jedi:focus-visible{
+    background-color: #16a34a;
+    outline: 3px solid #facc15;
+    outline-offset: 4px;
+}
+
+.tarjeta {
+    width: 250px;
+    padding: 25px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 0.5s ease;
+    transition-property: background-color, transition-duration;
+    transition: background-color 3.5s ease;
+    transition: transform 3.5s ease;
+}
+
+.tarjeta:hover{
+    background-color: #16a34a ;
+    transform: scale(1.5);
+}   
+
+.hangar{
+    padding: 30px;
+    background-color: #172033;
+
+}
+
+.nave{
+    width: 100px;
+    padding: 20px;
+    background-color: #2563eb;
+    transition: transform 0.5s ease; 
+}
+
+/*
+    ease:comienza lento acelera y vuelve lento al final
+    linear:velocidad constante
+    ease-in: empieza lento y termina rapido al final
+    ease-in-out: empieza lenta, rapido en el centro y termina lenta, simetricamente marcadado
+    ease-out: empieza rapido y termina lento 
+    cubic-bezer(n,n,n,n): curva de aceleracion
+    */
+.nave:hover{
+    transform: translate(50px, -10px);
+}
+
+.radar{
+    padding: 30px;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #172033;
+    border: #22C55E;
+    border-radius: 50%;
+}
+.indicador{
+    color: blue;
+    font-size: 70px;
+    transition: transform 1s ease;
+
+}
+.indicador:hover{
+    transform: rotate(-90deg);
+}
+
+.hangar2 {
+    padding: 30px;
+    background-color: #172033;
+}
+
+.nave2 {
+    width: 100px;
+    padding: 20px;
+    background-color: #2563eb;
+    transition: transform 0.5s ease;
+}
+
+.nave2:hover {
+    transform: translateX(50px) rotate(15deg) scale(1.2);
+}
+
+.espacio{
+    width: 100px;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #172033;
+    overflow: hidden;
+}
+.xwing{
+    width: 100px;
+    background-color: #2563eb;
+    text-align: center;
+    animation-name: vuelo;
+    animation-duration: 3s;
+}
+
+@keyframes vuelo{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(200px);
+    }
+}
+
+.alerta{
+    width: 220px;
+    padding: 20px;
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    animation-name: advertencia;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes advertencia{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
