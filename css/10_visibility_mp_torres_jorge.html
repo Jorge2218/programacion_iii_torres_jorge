@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <link rel="stylesheet" href="10_visibility.css">
+</head>
+
+<body>
+    <header>
+        <h1>Panadería Twin Ovens</h1>
+    </header>
+    <nav>
+        <a href="#productos">Productos</a>
+        <a href="#pedidos">Pedidos</a>
+        <a href="#horarios">Horarios</a>
+    </nav>
+
+    <h1 id="productos">Productos y precios</h1>
+    <p>Guagua de pan: rellena de mora o manjar.</p>
+    <p class="secreta">Producto agotado: empanada de queso, $0,50.</p>
+    <p>Pan de yuca: seis unidades por $1,00.</p>
+
+    <h1>Equipo de panaderos</h1>
+    <h2>Uso de Propiedad Position</h2>
+    <div class="caja">Rosa: guaguas de pan</div>
+    <div class="caja">Luis: pan de yuca</div>
+    <div class="especial">Ana: empanadas de queso</div>
+
+    <h2>Uso de Propiedad Position: Absolute</h2>
+    <div class="tarjeta-relativa">
+        <span class="etiqueta">
+            PEDIDO
+        </span>
+        <h1>Pedido #024</h1>
+        <p>12 empanadas de queso, listo para retirar a las 10:00.</p>
+    </div>
+
+    <h2>Uso de Propiedad Position: Fixed</h2>
+    <h2 id="horarios">Horarios y entregas</h2>
+    <p>Lunes a sábado: 6:00 a 19:00. Domingo: 7:00 a 13:00.</p>
+    <p>Entregamos en La Mariscal y La Floresta.</p>
+    <p>También llegamos al Centro Histórico de Quito.</p>
+    <section id="pedidos">
+        <h2>Cómo hacer un pedido</h2>
+        <p>Encarga tus productos con anticipación en la panadería.</p>
+    </section>
+    <a class="boton-fijo" href="#pedidos">
+        Información de pedidos
+    </a>
+
+</body>
+
+</html>
