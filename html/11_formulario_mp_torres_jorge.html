@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Registro de pedidos</title>
+</head>
+<body>
+
+
+    <header>
+        <h1>Twin Ovens</h1>
+        <p>Registro de pedidos de Finados</p>
+    </header>
+
+
+    <hr>
+
+
+    <main>
+
+
+        <form action="#"
+              method="get"
+              id="registro-pedidos">
+
+
+            <fieldset>
+                <legend>Información del pedido</legend>
+
+
+                <label for="codigo">
+                    Código de pedido:
+                </label>
+
+
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="PED-001"
+                       maxlength="10"
+                       required>
+
+
+                <br><br>
+
+
+                <label for="responsable">
+                    Panadero responsable:
+                </label>
+
+
+                <select id="responsable"
+                        name="responsable"
+                        required>
+
+
+                    <option value="">
+                        Selecciona un panadero
+                    </option>
+
+
+                    <option value="segundo">
+                        Segundo Torres
+                    </option>
+
+
+                    <option value="maria">
+                        María Andrade
+                    </option>
+
+
+                    <option value="carlos">
+                        Carlos Pérez
+                    </option>
+
+
+                </select>
+
+
+                <br><br>
+
+
+                <label for="sector">
+                    Sector de entrega:
+                </label>
+
+
+                <input type="text"
+                       id="sector"
+                       name="sector"
+                       placeholder="Ej. La Carolina"
+                       required>
+
+
+                <br><br>
+
+
+                <label for="fecha">
+                    Fecha de entrega:
+                </label>
+
+
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+
+
+            </fieldset>
+
+
+            <br>
+
+
+            <fieldset>
+                <legend>Características</legend>
+
+
+                <p>Urgencia del pedido:</p>
+
+
+                <input type="radio"
+                       id="alta"
+                       name="urgencia"
+                       value="alta"
+                       required>
+
+
+                <label for="alta">Alta</label>
+
+
+                <input type="radio"
+                       id="media"
+                       name="urgencia"
+                       value="media">
+
+
+                <label for="media">Media</label>
+
+
+                <input type="radio"
+                       id="baja"
+                       name="urgencia"
+                       value="baja">
+
+
+                <label for="baja">Baja</label>
+
+
+                <br><br>
+
+
+                <label for="cantidad">
+                    Cantidad de guaguas (1 a 20):
+                </label>
+
+
+                <input type="number"
+                       id="cantidad"
+                       name="cantidad"
+                       min="1"
+                       max="20"
+                       value="2">
+
+
+                <p>Empaque:</p>
+
+
+                <input type="checkbox"
+                       id="caja"
+                       name="empaque"
+                       value="caja">
+
+
+                <label for="caja">
+                    Caja de regalo
+                </label>
+
+
+                <br>
+
+
+                <input type="checkbox"
+                       id="bolsa"
+                       name="empaque"
+                       value="bolsa">
+
+
+                <label for="bolsa">
+                    Bolsa de papel
+                </label>
+
+
+                <br>
+
+
+                <input type="checkbox"
+                       id="tarjeta"
+                       name="empaque"
+                       value="tarjeta">
+
+
+                <label for="tarjeta">
+                    Tarjeta de saludo
+                </label>
+
+
+            </fieldset>
+
+
+            <br>
+
+
+            <fieldset>
+                <legend>Descripción del pedido</legend>
+
+
+                <label for="descripcion">
+                    Detalle del pedido:
+                </label>
+
+
+                <br>
+
+
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe el pedido..."
+                          required></textarea>
+
+
+            </fieldset>
+
+
+            <br>
+
+
+            <button type="submit">
+                Registrar pedido
+            </button>
+
+
+            <button type="reset">
+                Limpiar datos
+            </button>
+
+
+        </form>
+
+
+    </main>
+
+
+    <hr>
+
+
+    <footer>
+        <p>
+            <small>
+                Twin Ovens - 2026
+            </small>
+        </p>
+    </footer>
+
+
+</body>
+</html>
