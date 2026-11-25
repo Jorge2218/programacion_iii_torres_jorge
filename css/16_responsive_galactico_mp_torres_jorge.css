@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fbf3e7;
+    color: #422817;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.encabezado {
+    padding: 2rem 1rem;
+    background-color: #7a3e18;
+    color: #fff7ed;
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0;
+    color: #ffe0a3;
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: #422817;
+}
+
+.menu a {
+    color: #ffe0a3;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.contenido {
+    width: 90%;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+h2 {
+    color: #7a3e18;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.tarjeta {
+    min-width: 0;
+    padding: 1rem;
+    background-color: #fffaf2;
+    border: 2px solid #d5b99c;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(66, 40, 23, 0.12);
+}
+
+.imagen-producto {
+    display: grid;
+    place-items: center;
+    min-height: 180px;
+    background-color: #f3dfc5;
+    border-radius: 8px;
+    font-size: 5rem;
+}
+
+.tarjeta h3 {
+    color: #a64b1a;
+    font-size: 1.4rem;
+}
+
+#informacion {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f3dfc5;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: #422817;
+    color: #fff7ed;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .galeria {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .encabezado h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .galeria {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .encabezado h1 {
+        font-size: 3rem;
+    }
+
+    .tarjeta {
+        padding: 1.5rem;
+    }
+}
