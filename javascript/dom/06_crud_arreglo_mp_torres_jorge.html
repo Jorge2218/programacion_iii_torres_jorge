@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Twin Ovens</title>
+    <script src="06_crud_arreglo_mp_torres_jorge.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7efe3;
+            color: #422817;
+            margin: 2rem;
+        }
+
+        .tarjeta {
+            background: white;
+            border: 1px solid #d5b99c;
+            border-radius: 8px;
+            margin: 1rem 0;
+            padding: 1rem;
+        }
+
+        .acciones {
+            display: flex;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inventario de Twin Ovens en Quito Ecuador</h1>
+    <p>Administra guaguas de pan y varios panes</p>
+    <h2 id="cantidad">Productos registrados</h2>
+
+    <h2 id="tituloFormulario">Registro de producto</h2>
+    <form id="formulario">
+        <label for="nombre">Nombre del producto</label>
+        <input type="text" id="nombre" required>
+
+        <label for="categoria">Tipo de producto</label>
+        <select id="categoria">
+            <option value="Tradicional">Guaguas de pan</option>
+            <option value="Pan de sal">Pan de yuca</option>
+            <option value="Pan tradicional">Pan de Ambato</option>
+            <option value="Pan dulce">Pan de chocolate</option>
+            <option value="Pan de agua">Pan de agua</option>
+        </select>
+
+        <label for="estado">Estado</label>
+        <select id="estado">
+            <option value="Disponible">Disponible</option>
+            <option value="Por hornear">Por hornear</option>
+            <option value="Agotado">Agotado</option>
+        </select>
+
+        <button type="submit" id="guardar">Agregar producto</button>
+        <button type="button" id="cancelar" hidden>Cancelar</button>
+    </form>
+
+    <h2>Productos registrados</h2>
+    <div id="contenedor"></div>
+</body>
+</html>
